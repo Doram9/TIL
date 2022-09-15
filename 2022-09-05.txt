@@ -1,0 +1,17 @@
+prj import error debug
+1. Java error
+jdk가 제대로 설치되어 있는지 확인.
+환경변수에 jdk가 제대로 잡혀있는지 확인.
+2. maven update 속도 느림 현상
+사내 proxy망 whitelist에 maven setting 추가
+위치 : C:/USER/Cemware/maven-setting.xml
+3. lombok 인식에러(getter,setter error)
+사용하는 lombok version을 찾아서 lombok-xxx.jar를 실행하여 IDE에 설치
+IDE 재시작
+Prj update
+4. css, js 적용 error, url 이동 error
+tomcat WebModules Path 를 /로 설정
+tomcat 에서 기본적으로 wepapp 배포시 url에 app명을 주어야 접근할 수 있다.
+하지만 매번 url에 app명을 줘서 접근하면 불편하기때문에 Root context에서 Context path 를 /로 바꿔준다.
+
+@PersistenceContext 영속성 컨텍스트
